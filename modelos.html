@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Proyecto Final HTML 5</title>
+	
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
+	<link href="css/style.css" rel="stylesheet" />
+	<script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> 
+	<link rel="icon" type="image/png" href="img/icon.png">
+</head>
+
+<body> 
+
+	<div class="container">
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/gallery/FondoPr.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="img/gallery/LogoBlanco1.png" alt="Logo" class="tm-site-logo" width="100" height="30" />
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title" style="font-family: 'Cedar'">Hot-Wheels</h1>
+								<h6 class="tm-site-description"  style="font-family: 'Fox'">Una historia frenetica.</h6>	
+							</div>
+						</div>
+					<nav class="col-md-6 col-12 tm-nav">
+                        <ul class="tm-nav-ul">
+                            <li class="tm-nav-li"><a href="index.html" class="tm-nav-link active" style="font-family: 'Grob'; font-size:20px; text-shadow: 0px 0px 2px black; margin-right: 10px;">Inicio</a></li>
+                            <li class="tm-nav-li"><a href="historia.html" class="tm-nav-link" style="font-family: 'Grob'; font-size:20px; text-shadow: 0px 0px 2px black; margin-right: 10px;">Historia</a></li>
+                            <li class="tm-nav-li"><a href="modelos.html" class="tm-nav-link" style="font-family: 'Grob'; font-size:20px; text-shadow: 0px 0px 2px black; margin-right: 10px;">Modelos 3D</a></li>
+                            <li class="tm-nav-li"><a href="matchbox.html" class="tm-nav-link" style="font-family: 'Grob'; font-size:20px; text-shadow: 0px 0px 2px black; margin-right: 10px;">Matchbox</a></li>
+                            <li class="tm-nav-li"><a href="sobremi.html" class="tm-nav-link" style="font-family: 'Grob'; font-size:20px; text-shadow: 0px 0px 2px black; margin-right: 10px;">Sobre mi</a></li>
+                        </ul>
+                    </nav>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- Loop de imagenes-->
+<div class="loop-holder">
+	<div class="loop-holder__text" style="color: #ffffff;">Hot-Wheels - Hot-Wheels - Hot-Wheels</div>
+	<div class="loop-holder__text" style="color: #ffffff;">Hot-Wheels - Hot-Wheels - Hot-Wheels</div>
+	<div class="loop-holder__text" style="color: #ffffff;">Hot-Wheels - Hot-Wheels - Hot-Wheels</div>
+</div>
+		<main>
+
+			<header class="row tm-welcome-section">
+			
+				<p class="col-12 text-center texto-grande">INTERACTUA UN POCO CON ELLOS</p>
+			  </header>
+
+			  	
+<!-- inicio modelos 3D -->
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Cambiado para mostrar dos modelos por fila */
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .model-container {
+        margin: 20px; /* Ajusta el tamaño del margen según tus preferencias */
+        box-sizing: border-box; /* Para incluir el margen en el ancho total del elemento */
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        .grid-container {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px; /* Ajusta el espacio entre modelos para dispositivos móviles */
+        }
+    }
+</style>
+
+
+<div class="grid-container">
+    <div class="model-container">
+		<model-viewer src="3DModel/Carrito.gltf" alt="A 3D model of a car" style="width: 100%; max-width: 500px; height: 500px;" shadow-intensity="1" camera-controls auto-rotate ar interaction-prompt="none"></model-viewer>
+    </div>
+    <div class="model-container">
+        <model-viewer src="3DModel/carrito2.glb" alt="Another 3D model of a car" style="width: 100%; max-width: 500px; height: 500px;" shadow-intensity="1" camera-controls auto-rotate ar></model-viewer>
+    </div>
+    <div class="model-container">
+        <model-viewer src="3DModel/carrito3.glb" alt="Another 3D model of a car" style="width: 100%; max-width: 500px; height: 500px;" shadow-intensity="1" camera-controls auto-rotate ar></model-viewer>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <model-viewer src="3DModel/carrito4.glb" alt="Another 3D model of a car" style="width: 100%; max-width: 500px; height: 500px;" shadow-intensity="1" camera-controls auto-rotate ar></model-viewer>
+    </div>
+    <div class="model-container">
+        <model-viewer src="3DModel/carrito5.glb" alt="Another 3D model of a car" style="width: 100%; max-width: 500px; height: 500px;" shadow-intensity="1" camera-controls auto-rotate ar></model-viewer>
+    </div>
+    <div class="model-container">
+        <model-viewer src="3DModel/carrito6.glb" alt="Another 3D model of a car" style="width: 100%; max-width: 500px; height: 500px;" shadow-intensity="1" camera-controls auto-rotate ar></model-viewer>
+    </div>
+</div>
+			  <script type="module"
+				  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+			  </script>
+		
+			<script nomodule
+			  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+			</script>
+
+<!-- final -->
+
+			 <!-- gallery page 3 -->
+		<br><br>
+			<div class="tm-section tm-container-inner">
+				<div class="row">
+					<div class="col-md-6">
+						<figure class="tm-description-figure">
+							<img src="img/img-01.jpg" alt="Image" class="img-fluid" />
+						</figure>
+					</div>
+					<div class="col-md-6">
+						<div class="tm-description-box"> 
+							<h4 class="tm-gallery-title">CONOCE DE CERCA A LOS PEQUEÑOS AUTOS</h4>
+							<p class="tm-mb-45">Hot Wheels es una marca de línea de automóviles de juguete a escala de la firma estadounidense de juguetes Mattel, introducida en 1968. Destaca por sus diseños llamativos y detalles en los automóviles. Estos juguetes son elaborados a presión con plástico y metal, así como con pintura que tiene acabados similares a los de los coches de producción real y elaborados con base en los planos de distintos fabricantes.</p>
+							<a href="historia.html" class="tm-btn tm-btn-default tm-right">CLICK AQUI!!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+
+
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; HugoCabreth
+		</footer>
+		<div style="text-align: center;">
+			<img src="img/Paleta.jpg" alt="Imagen descriptiva" style="max-width: 100%; height: auto;">
+		</div>
+	</div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase().replace(/\s/g, ''); // Eliminar espacios y convertir a minúsculas
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
+	
+</body>
+</html>

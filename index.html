@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Proyecto Final HTML 5</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"><!-- css reset-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
+	<link href="css/style.css" rel="stylesheet" />
+	<link rel="icon" type="image/png" href="img/icon.png">
+</head>
+
+<body> 
+
+	<div class="container">
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/gallery/FondoPr.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="img/gallery/LogoBlanco1.png" alt="Logo" class="tm-site-logo" width="100" height="30" />
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title" style="font-family: 'Cedar'">Hot-Wheels</h1>
+								<h6 class="tm-site-description"  style="font-family: 'Fox'">Una historia frenetica.</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+                        <ul class="tm-nav-ul">
+                            <li class="tm-nav-li"><a href="index.html" class="tm-nav-link active" style="font-family: 'Grob'; font-size:20px; text-shadow: 0px 0px 2px black; margin-right: 10px;">Inicio</a></li>
+                            <li class="tm-nav-li"><a href="historia.html" class="tm-nav-link" style="font-family: 'Grob'; font-size:20px; text-shadow: 0px 0px 2px black; margin-right: 10px;">Historia</a></li>
+                            <li class="tm-nav-li"><a href="modelos.html" class="tm-nav-link" style="font-family: 'Grob'; font-size:20px; text-shadow: 0px 0px 2px black; margin-right: 10px;">Modelos 3D</a></li>
+                            <li class="tm-nav-li"><a href="matchbox.html" class="tm-nav-link" style="font-family: 'Grob'; font-size:20px; text-shadow: 0px 0px 2px black; margin-right: 10px;">Matchbox</a></li>
+                            <li class="tm-nav-li"><a href="sobremi.html" class="tm-nav-link" style="font-family: 'Grob'; font-size:20px; text-shadow: 0px 0px 2px black; margin-right: 10px;">Sobre mi</a></li>
+                        </ul>
+                    </nav>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- Loop de imagenes-->
+<div class="loop-holder">
+	<div class="loop-holder__text" style="color: #ffffff;">Hot-Wheels - Hot-Wheels - Hot-Wheels</div>
+	<div class="loop-holder__text" style="color: #ffffff;">Hot-Wheels - Hot-Wheels - Hot-Wheels</div>
+	<div class="loop-holder__text" style="color: #ffffff;">Hot-Wheels - Hot-Wheels - Hot-Wheels</div>
+</div>
+		<main>
+
+			<header class="row tm-welcome-section">
+				
+				<p class="col-12 text-center texto-grande">Conoce a Hot-Wheels a lo largo de los años.</p>
+			  </header>
+
+			<div class="tm-paging-links">
+				<nav>
+					<ul>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link active">Nuevo</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Decadas</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Clasicos</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Galeria -->
+			<div class="row tm-gallery">
+				<!-- Inicio de Galeria 1 -->
+				<div id="tm-gallery-page-nuevo" class="tm-gallery-page">
+
+					
+					  <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+						  <img src="img/gallery/1.png" alt="Image" class="img-fluid tm-gallery-img" />
+						  <figcaption>
+							<h4 class="tm-gallery-title">Batman The Animated Series</h4>
+							<p class="tm-gallery-description">Este modelo en particular captura el diseño icónico del vehículo visto en la serie animada y es una pieza codiciada por coleccionistas y aficionados de Batman.</p>
+						  </figcaption>
+						</figure>
+					  </article>
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/gallery/3.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Peanuts</h4>
+								<p class="tm-gallery-description">Con un diseño inspirado en Snoopy y los Peanuts, este carro de colección es perfecto para recrear emocionantes carreras y aventuras.</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/gallery/4.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Tortugas Ninja</h4>
+								<p class="tm-gallery-description">Los coleccionistas querrán cada juego para una colección Metal Teenage Mutant Ninja Turtle</p>
+							</figcaption>
+						</figure>
+					</article>
+
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/gallery/5.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">X-Men (Xavier)</h4>
+								<p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+							</figcaption>
+						</figure>
+					</article>
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/gallery/6.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Tany Hawk</h4>
+								<p class="tm-gallery-description">Hemos formado equipo con la leyenda del skateboard para inspirar a la nueva generación de skaters. Con nuestros fingerboards y pistas, ¡los más pequeños podrán demostrar sus habilidades y llegar a lo más alto!</p>
+							</figcaption>
+						</figure>
+					</article>
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/gallery/7.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">'70 VOLKSWAGEN BAJA BUG</h4>
+								<p class="tm-gallery-description">De la linea Hot Wheels Tunned Themed</p>
+								
+						</figure>
+					</article>
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/gallery/8.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">BMW M4</h4>
+								<p class="tm-gallery-description">El BMW M4 es una versión de alto rendimiento del automóvil Serie 4 desarrollado por la división de deportes de motor interna de BMW, BMW M GmbH.</p>
+							</figcaption>
+						</figure>
+					</article>
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/gallery/9.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Batman: Arkham Knight Batimovil</h4>
+								<p class="tm-gallery-description">Esta es una versión del Batimóvil que aparece en el videojuego Batman: Arkham Knight. Presentaba capacidades EMP, un cabrestante, capacidades de descarga eléctrica y un gran arsenal de armas.</p>
+							</figcaption>
+						</figure>
+					</article>
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/gallery/10.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">94 TOYOTA SUPRA</h4>
+								<p class="tm-gallery-description">El Toyota Supra es un automóvil deportivo producido por Toyota desde 1978. Su nombre deriva del término latino "supra", que se traduce como "ir más allá". </p>
+							</figcaption>
+						</figure>
+					</article>
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/gallery/11.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">SIMPSON FAMILY CAR</h4>
+								<p class="tm-gallery-description">Sedán de cuatro puertas con bolsa de aire del lado del conductor, palanca de cambios en la columna, radio de 8 vías y guardabarros delantero permanentemente arrugado. Conducido por Homer Simpson, se cree que fue construido en Croacia a partir de tanques soviéticos.</p>
+							</figcaption>
+						</figure>
+					</article>
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/gallery/12.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">LA MAQUINA DEL MISTERIO</h4>
+								<p class="tm-gallery-description">Una de las colecciones más emblemáticas de Hot Wheels ¡RacerVerse! Hot Wheels RacerVerse reúne a los personajes favoritos de legendarias historias del mundo del entretenimiento</p>
+							</figcaption>
+						</figure>
+					</article>
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/gallery/13.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">YELLOW SUBMARINE</h4>
+								<p class="tm-gallery-description">El modelo Hot Wheels es básicamente el submarino que aparece en la película musical animada de 1968 Yellow Submarine . Sus proporciones no se corresponden con las de un submarino "real", aunque tiene la misma arquitectura asombrosa</p>
+							</figcaption>
+						</figure>
+					</article>
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/gallery/14.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">REPTAR</h4>
+								<p class="tm-gallery-description">Esta es una representación de Reptar de la franquicia de medios Rugrats . El personaje en sí es una parodia de Godzilla .</p>
+							</figcaption>
+						</figure>
+					</article>
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/gallery/15.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">CARRO DE LOS PICAPIEDRA</h4>
+								<p class="tm-gallery-description">Lanzado por primera vez como cambiador de color, Color FX (Color Turbo) . Cambia de color cuando se sumerge en agua.</p>
+							</figcaption>
+						</figure>
+					</article>
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/gallery/16.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">PEGAJOSO DE CAZAFANTASMAS</h4>
+								<p class="tm-gallery-description">Vehiculo lanzado en 2016 para la linea Spooky Cars, tuve una colaboracion con la iconica saga de fantasmas.</p>
+							</figcaption>
+						</figure>
+					</article>
+
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/gallery/17.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">POWER ROCKET</h4>
+								<p class="tm-gallery-description">Power Rocket es una de las creaciones de fantasía de Larry Wood . Este vehículo cohete ultrarrápido tiene una capota que se abre. </p>
+							</figcaption>
+						</figure>
+					</article>
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/gallery/18.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">71 MAVERICK GRABBER</h4>
+								<p class="tm-gallery-description">Lanzado el en 2021 para conmemorar el Dia De Los Muertos Series se lanzo una serie de 6 carros.</p>
+							</figcaption>
+						</figure>
+					</article>
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/gallery/19.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">RYURA LX</h4>
+								<p class="tm-gallery-description">Edicion Especial de Halloween el Ryura LX es un diseño original de Hot Wheels que es un sedán de lujo de tamaño completo con superpotencia.</p>
+							</figcaption>
+						</figure>
+					</article>
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/gallery/20.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">MINI COOPER S CHALLENGE</h4>
+								<p class="tm-gallery-description">Un coche de carreras especialmente diseñado, basado en el R56 Hardtop, con transmisión de 6 velocidades; neumáticos de carreras y un kit aerodinámico.</p>
+							</figcaption>
+						</figure>
+					</article>
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/gallery/21.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">ECTO-1</h4>
+								<p class="tm-gallery-description">El auto de dibujos animados de los Cazafantasmas Ecto-1 (oficialmente llamado simplemente Ecto-1 ) se parecía mucho a la versión cinematográfica ( Ecto-1 ), sin embargo, se agregaron muchas características durante la serie animada.</p>
+							</figcaption>
+						</figure>
+					</article>
+
+
+
+
+
+
+
+
+
+
+					
+				</div> <!-- Final de Galeria 1 -->
+				
+				
+				<!-- Inicio de galeria 2 -->
+				<div id="tm-gallery-page-decadas" class="tm-gallery-page hidden">
+					<p class="col-12 text-center" style="font-size: 24px; font-family: 'Vintage'; color: white;">90's</p>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Decadas/1.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">California Custom Miniatures (1999)</h4>
+								<p class="tm-gallery-description">Hot-Wheel customizado de 1999.</p>
+								
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Decadas/2.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">California Custom Miniatures (1999)</h4>
+								<p class="tm-gallery-description">Hot-Wheel customizado con barra de torsion en la suspension.</p>
+								
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Decadas/3.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">California Custom Miniatures (1999)</h4>
+								<p class="tm-gallery-description">Hot-Wheel customizado con baja friccion.</p>
+								
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Decadas/4.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">California Custom Miniatures (1999)</h4>
+								<p class="tm-gallery-description">Hot-Wheel customizado con llantas de baja friccion.</p>
+							</figcaption>
+						</figure>
+					</article>
+					<!----------------------------------------------00s-------------------------------------------------------------------------->
+					<p class="col-12 text-center" style="font-size: 24px; font-family: 'Vintage'; color: white;">00's</p>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Decadas/5.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">MINI COOPER</h4>
+								<p class="tm-gallery-description">El Mini Cooper es una pieza fundida de Hot Wheels diseñada por Phil Riehlman basada en el Austin y Morris Mini Cooper de 1961-2000, una versión de alto rendimiento del Mini de BMC.</p>
+							</figcaption>
+						</figure>
+					</article>	
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Decadas/6.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">HAMMER COUPE</h4>
+								<p class="tm-gallery-description">El Hammered Coupé ha salido en las siguientes versiones escala 1/64.</p>
+							</figcaption>
+						</figure>
+					</article>			
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Decadas/7.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">DEUCE ROADSTER</h4>
+								<p class="tm-gallery-description">El Deuce Roadster es un casting de Hot Wheels diseñado por Greg Padginton que debutó en las Primeras Ediciones del año 2000 . Es una versión hot rod V10 de un Ford clásico de 1932.</p>
+							</figcaption>
+						</figure>
+					</article>	
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Decadas/8.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">BLAST LANE</h4>
+								<p class="tm-gallery-description">El Blast Lane ha salido en las siguientes versiones escala 1/64.</p>
+							</figcaption>
+						</figure>
+					</article>	
+					<!----------------------------------------------10s-------------------------------------------------------------------------->
+					<p class="col-12 text-center" style="font-size: 24px; font-family: 'Vintage'; color: white;">10's</p>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Decadas/9.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">CORVETTE GRAND SPORT</h4>
+								<p class="tm-gallery-description">El Corvette Grand Sport es un casting de Hot Wheels basado en el auto de carreras del mismo nombre, que debutó en los Nuevos Modelos de 2011 .</p>
+							</figcaption>
+						</figure>
+					</article>	
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Decadas/10.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">DODGE VIPER COUGE</h4>
+								<p class="tm-gallery-description">El Dodge Viper es un automóvil deportivo fabricado por Dodge. Fue rediseñado en gran medida con una carrocería en ángulos afilados.</p>
+							</figcaption>
+						</figure>
+					</article>	
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Decadas/11.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">BLAST LANE</h4>
+								<p class="tm-gallery-description">El Blast Lane ha salido en las siguientes versiones escala 1/64.</p>
+							</figcaption>
+						</figure>
+					</article>	
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Decadas/12.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">'49 DRAG MERC</h4>
+								<p class="tm-gallery-description">El Drag Merc del 49 es una versión de carreras de resistencia del Mercury Eight de 1949. Es el segundo Mercury de 1949 fabricado por Hot Wheels,</p>
+							</figcaption>
+						</figure>
+					</article>	
+					<!----------------------------------------------20s-------------------------------------------------------------------------->
+					<p class="col-12 text-center" style="font-size: 24px; font-family: 'Vintage'; color: white;">20's</p>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Decadas/13.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">CORVETTE GRAND SPORT</h4>
+								<p class="tm-gallery-description">El Corvette Grand Sport es un casting de Hot Wheels basado en el auto de carreras del mismo nombre, que debutó en los Nuevos Modelos de 2011 .</p>
+							</figcaption>
+						</figure>
+					</article>	
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Decadas/14.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">DODGE VIPER COUGE</h4>
+								<p class="tm-gallery-description">El Dodge Viper es un automóvil deportivo fabricado por Dodge. Fue rediseñado en gran medida con una carrocería en ángulos afilados.</p>
+							</figcaption>
+						</figure>
+					</article>	
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Decadas/15.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">BLAST LANE</h4>
+								<p class="tm-gallery-description">El Blast Lane ha salido en las siguientes versiones escala 1/64.</p>
+							</figcaption>
+						</figure>
+					</article>	
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Decadas/16.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">'49 DRAG MERC</h4>
+								<p class="tm-gallery-description">El Drag Merc del 49 es una versión de carreras de resistencia del Mercury Eight de 1949. Es el segundo Mercury de 1949 fabricado por Hot Wheels,</p>
+							</figcaption>
+						</figure>
+					</article>	
+
+				</div>	
+			</div> 							
+		</div>
+				<!-- Final de galeria 2 -->
+				
+				<!-- Inicio de galeria 3 -->
+				<div id="tm-gallery-page-clasicos" class="tm-gallery-page hidden">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Clasicos/1.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Plymouth Arrow (1977)</h4>
+								<p class="tm-gallery-description">Hot-Wheel en 1980 saco su linea de autos deportivos empezando por este Plymouth Arrow.</p>	
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Clasicos/2.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Chevrolet El Camino (1968)</h4>
+								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Clasicos/3.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">CLASSIC COBRA</h4>
+								<p class="tm-gallery-description">Este modelo también se conoce como Shelby Cobra 427 S/C por el mismo casting. Se basa en la versión modificada de Carroll Shelby del deportivo británico AC Ace, un diseño de BMW anterior a la Segunda Guerra Mundial. </p>					
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Clasicos/4.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">BLAST LANE</h4>
+								<p class="tm-gallery-description"> La motobicicleta cuenta con una ranura en el lateral donde se puede enchufar un recipiente de Nitrox</p>	
+							</figcaption>
+						</figure>
+					</article>
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Clasicos/5.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">CLASSIC PACKARD</h4>
+								<p class="tm-gallery-description">El Classic Packard se basa en el Packard Eight de la vida real, un automóvil de lujo de alta gama producido por Packard de 1930 a 1936. Parece estar basado específicamente en un modelo de limusina sedán De Luxe Eight.</p>	
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Clasicos/6.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">BONE SHAKER (2005)</h4>
+								<p class="tm-gallery-description">Con versiones de techo abierto y cerrado e incluso una versión con la cara del Joker en lugar de la calavera.</p>	
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Clasicos/7.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">BONE SHAKER (2007)</h4>
+								<p class="tm-gallery-description">Bone Shaker es un diseño de hot rod creado por Larry Wood . Con una calavera distintiva en su frente, el Bone Shaker es uno de los modelos de Hot Wheels favoritos de Larry Wood para diseñar,</p>	
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Clasicos/8.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">T-BUCKE (2006)</h4>
+								<p class="tm-gallery-description">Este modelo se caracteriza por su diseño de carrocería de estilo "bucket" (cubo), que es corto y abierto, a menudo sin techo o con un pequeño parabrisas.</p>	
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Clasicos/9.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">VOLKSWAGEN DRAG BEETLE</h4>
+								<p class="tm-gallery-description">El Spectrafrost en particular era uno de los modelos más buscados de esa serie debido a su diseño distintivo y su acabado especial.</p>	
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Clasicos/10.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">'49 MERC</h4>
+								<p class="tm-gallery-description">Este modelo en particular captura la esencia del diseño de los años 40 y 50, con su distintiva forma de carrocería y detalles característicos de la época.</p>	
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Clasicos/11.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">1976 CHEVY CHEVETTE</h4>
+								<p class="tm-gallery-description">La versión de Hot Wheels captura la esencia de este automóvil en un diseño en miniatura, realzado por el acabado Spectrafrost que le da un toque de estilo adicional.</p>	
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure class="gallery-figure" onmousemove="tiltImage(event)" onmouseout="resetImageSize(event)">
+							<img src="img/Clasicos/12.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">ROLLS ROYCE PHANTOM II</h4>
+								<p class="tm-gallery-description">La inclusión de metal en la construcción del modelo también le confiere una sensación de peso y solidez que añade realismo a la experiencia de coleccionar y jugar con estos modelos.</p>	
+							</figcaption>
+						</figure>
+					</article>
+
+					<script>
+						function tiltImage(event) {
+							const figure = event.currentTarget;
+							const image = figure.querySelector('img');
+							const rect = figure.getBoundingClientRect();
+							const x = event.clientX - rect.left;
+							const y = event.clientY - rect.top;
+							const xPercent = (x / rect.width - 0.5) * 100;
+							const yPercent = (y / rect.height - 0.5) * 100;
+							image.style.transform = `rotateY(${xPercent / 5}deg) rotateX(${-yPercent / 5}deg) `;
+						}
+				
+						function resetImageSize(event) {
+							const figure = event.currentTarget;
+							const image = figure.querySelector('img');
+							image.style.transform = 'none';
+						}
+					</script>
+				</div> <!-- gallery page 3 -->
+			</div>
+
+
+			
+			<br><br><br>
+			<div class="tm-section tm-container-inner">
+				<div class="row">
+					<div class="col-md-6">
+						<figure class="tm-description-figure">
+							<img src="img/img-01.jpg" alt="Image" class="img-fluid" />
+						</figure>
+					</div>
+					<div class="col-md-6">
+						<div class="tm-description-box"> 
+							<h4 class="tm-gallery-title">CONOCE DE CERCA A LOS PEQUEÑOS AUTOS</h4>
+							<p class="tm-mb-45">Hot Wheels es una marca de línea de automóviles de juguete a escala de la firma estadounidense de juguetes Mattel, introducida en 1968. Destaca por sus diseños llamativos y detalles en los automóviles. Estos juguetes son elaborados a presión con plástico y metal, así como con pintura que tiene acabados similares a los de los coches de producción real y elaborados con base en los planos de distintos fabricantes.</p>
+							<a href="historia.html" class="tm-btn tm-btn-default tm-right">CLICK AQUI!!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+
+
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; HugoCabreth
+		</footer>
+		
+		<div style="text-align: center;">
+			<img src="img/Paleta.jpg" alt="Imagen descriptiva" style="max-width: 100%; height: auto;">
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase().replace(/\s/g, ''); // Eliminar espacios y convertir a minúsculas
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
+	
+</body>
+</html>
